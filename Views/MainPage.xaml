@@ -1,0 +1,54 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:PokemonApp.Views"
+             x:Class="PokemonApp.Views.MainPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="---- Menú ----" HorizontalOptions="CenterAndExpand" Margin="0,10" FontSize="Large" FontAttributes="Bold" />
+
+            <Label Text="Name:" />
+            <Entry Text="{Binding Name}" />
+
+            <Label Text="Birthdate:" />
+            <DatePicker Date="{Binding Birthdate}" />
+
+            <Label Text="Current Transformation:" />
+            <Entry Text="{Binding CurrentTransformation}" />
+
+            <Label Text="Power:" />
+            <Entry Text="{Binding Power}" />
+
+            <Button Text="Create Pichu" Command="{Binding CreatePichuCommand}" />
+            <Button Text="Create Charmander" Command="{Binding CreateCharmanderCommand}" />
+            <Button Text="Create Squirtle" Command="{Binding CreateSquirtleCommand}" />
+
+            <Label Text="---- Pokemons ----" HorizontalOptions="CenterAndExpand" Margin="0,20" FontSize="Large" FontAttributes="Bold" />
+
+            <ListView ItemsSource="{Binding Pokemons}" HasUnevenRows="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Padding="10">
+                                <Label Text="{Binding Name}" FontSize="Large" />
+                                <Label Text="{Binding Birthdate}" />
+                                <Label Text="{Binding CurrentTransformation}" />
+                                <Label Text="Powers:" FontAttributes="Bold" Margin="0,10,0,0" />
+                                <ListView ItemsSource="{Binding Powers}" SeparatorVisibility="None">
+                                    <ListView.ItemTemplate>
+                                        <DataTemplate>
+                                            <TextCell Text="{Binding}" />
+                                        </DataTemplate>
+                                    </ListView.ItemTemplate>
+                                </ListView>
+                                <Button Text="Evolve" Command="{Binding Source={x:Reference EvolveButton}}" CommandParameter="{Binding .}" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            <Button x:Name="EvolveButton" IsVisible="False" Clicked="EvolveButton_Clicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+

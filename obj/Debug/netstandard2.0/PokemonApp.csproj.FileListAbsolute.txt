@@ -1,0 +1,7 @@
+C:\Users\Marcela Andrade\source\repos\PokemonApp\PokemonApp\PokemonApp\obj\Debug\netstandard2.0\PokemonApp.csproj.AssemblyReference.cache
+C:\Users\Marcela Andrade\source\repos\PokemonApp\PokemonApp\PokemonApp\obj\Debug\netstandard2.0\PokemonApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Marcela Andrade\source\repos\PokemonApp\PokemonApp\PokemonApp\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Marcela Andrade\source\repos\PokemonApp\PokemonApp\PokemonApp\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
+C:\Users\Marcela Andrade\source\repos\PokemonApp\PokemonApp\PokemonApp\obj\Debug\netstandard2.0\PokemonApp.AssemblyInfoInputs.cache
+C:\Users\Marcela Andrade\source\repos\PokemonApp\PokemonApp\PokemonApp\obj\Debug\netstandard2.0\PokemonApp.AssemblyInfo.cs
+C:\Users\Marcela Andrade\source\repos\PokemonApp\PokemonApp\PokemonApp\obj\Debug\netstandard2.0\PokemonApp.csproj.CoreCompileInputs.cache
